@@ -8,6 +8,7 @@ import 'package:business_card/quizzler/index.dart';
 import 'package:business_card/xylophone/index.dart';
 import 'package:flutter/material.dart';
 import 'package:business_card/mi_business_card/index.dart';
+import 'package:business_card/todoey/index.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -199,6 +200,25 @@ class Home extends StatelessWidget {
               ),
               child: Text(
                 '15 - Flash Chat',
+                style: TextStyle(
+                  color: Colors.teal.shade900,
+                ),
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (builder) => Todoey(),
+                  ),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                primary: Colors.white,
+              ),
+              child: Text(
+                '16 - Todoey',
                 style: TextStyle(
                   color: Colors.teal.shade900,
                 ),
